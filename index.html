@@ -1,0 +1,106 @@
+<!doctype html>
+<html>                         
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@700&display=swap" rel="stylesheet">
+
+  <style>*{ font-family: 'Bona Nova', serif;}
+      
+      </style>
+</head>
+<body>
+  <header class="  bg-center bg-cover flex items-center py-40 w-full " style="background-image: url(pics/black.jpg)")>
+    <div class="text-center">
+      <h1 id="heading" class= "text-6xl text-red-600 text-center py-4"> Make your best team<h1>
+      <p class="text-white  w-1/2 m-auto">This wevsite build for select not more than 5 player and calculte total price of those selected player . thanks for comming her and do calculaate your best 5 player price </p>
+    </div>
+  </header>
+  <main class=" bg-neutral-900  pt-20">
+    <section class=" w-11/12 m-auto grid grid-cols-1 gap-4 bg-zinc-800 lg:grid-cols-4">
+      <div class="col-span-3 ">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/1.png" alt="">
+            <div class="text-center text-white py-7 bg-black">
+              <h1 id="player1" class="font-bold py-3"> Casimiro</h1>
+              <button id="btn1" type="submit"  class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/2.png" alt="">
+            <div class="text-center bg-black text-white py-7">
+              <h1 id="player2" class="font-bold py-3">Marcelo</h1>
+              <button id="btn2" class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/3.png" alt="">
+            <div class="text-center bg-black text-white py-7">
+              <h1 id="player3" class="font-bold py-3">Neymar jr</h1>
+              <button id="btn3" class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/4.png" alt="">
+            <div class="text-center bg-black text-white py-7">
+              <h1 id="player4" class="font-bold py-3">Kaka</h1>
+              <button id="btn4" class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/5.png" alt="">
+            <div class="text-center bg-black text-white py-7">
+              <h1  id="player5"class="font-bold py-3">Kylian Mbappé </h1>
+              <button id="btn5" class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+          <div class="border-2 border-white">
+            <img class="w-full" src="pics/6.png" alt="">
+            <div class="text-center bg-black text-white py-7">
+              <h1 id="player6" class="font-bold py-3">Silva</h1>
+              <button id="btn6" class="w-11/12 bg-indigo-700 py-2 rounded-sm font-bold">SELECT</button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="h-50 bg-black p-7 text-white">
+            <h1 class="text-4xl text-center">Selected 5</h1>
+            <hr class="w-10/12 m-auto py-4">
+            <ol id="ulist" class="list-decimal">
+            </ol>
+          </div>
+          <div class="bg-black text-white py-4">
+            <h1 class="text-center text-4xl">Budget</h1>
+            <hr class="w-10/12 m-auto py-3">
+            <div class="grid grid-cols-2 text-white p-5 gap-y-5">
+              <div><h1 class="pt-3">Per Player</h1></div> <div><input  class="w-full py-2 bg-black border-2 border-white text-center" type="text" name="per-player-price" id="per-player-price"></div>
+              <div class="col-span-2"> <button id="player-expense" class="w-full bg-indigo-700 py-2 rounded-sm font-bold">Calculate</button></div>
+              <div><h1  >Player Expanses</h1></div> <div class="px-4">$<span id="perPlayerExpenseId"></span></div>
+              <div><h1 class="pt-3">Manager</h1></div> <div><input  class="w-full py-2 bg-black border-2 border-white text-center" type="text" name="managerFee" id="managerFee"></div>
+              <div><h1 class="pt-3">Coach</h1></div> <div><input  class="w-full py-2 bg-black border-2 border-white text-center" type="text" name="coachFee" id="coachFee"></div>
+              <div class="col-span-2"> <button id="calculate-total" class="w-full bg-indigo-700 py-2 rounded-sm font-bold">Calculate Total</button></div>
+              <div><h1 >Total</h1></div> <div class="px-4">$<span id="total-money"></span></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
